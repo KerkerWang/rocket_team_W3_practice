@@ -806,37 +806,37 @@ class Program
 
 
         //補充習題2.輸入一個數，輸出其質因數//for loop
-        Console.WriteLine("請輸入一正整數");
-        int N = Convert.ToInt32(Console.ReadLine());
-        while (N < 0)
-        {
-            Console.WriteLine("非正整數，請輸入正整數");
-            N = Convert.ToInt32(Console.ReadLine());
-        }
-        string output = N + " = ";
-        if (N == 1)
-        {
-            Console.WriteLine("1 = 1 * 1");
-        }
-        else
-        {
-            for (int i = 2; i <= N; i++)
-            {
-                if (N % i == 0)
-                {
-                    int count = 0;
-                    for (int j = 0; N % i == 0; j++)
-                    {
-                        N = N / i;
-                        count++;
-                    }
-                    output = output + i + " ^ " + count + " * ";
-                }
-            }
-            output = output.Substring(0, output.Length - 3);
-            Console.WriteLine(output);
-        }
-        Console.ReadKey();
+        //Console.WriteLine("請輸入一正整數");
+        //int N = Convert.ToInt32(Console.ReadLine());
+        //while (N < 0)
+        //{
+        //    Console.WriteLine("非正整數，請輸入正整數");
+        //    N = Convert.ToInt32(Console.ReadLine());
+        //}
+        //string output = N + " = ";
+        //if (N == 1)
+        //{
+        //    Console.WriteLine("1 = 1 * 1");
+        //}
+        //else
+        //{
+        //    for (int i = 2; i <= N; i++)
+        //    {
+        //        if (N % i == 0)
+        //        {
+        //            int count = 0;
+        //            for (int j = 0; N % i == 0; j++)
+        //            {
+        //                N = N / i;
+        //                count++;
+        //            }
+        //            output = output + i + " ^ " + count + " * ";
+        //        }
+        //    }
+        //    output = output.Substring(0, output.Length - 3);
+        //    Console.WriteLine(output);
+        //}
+        //Console.ReadKey();
 
 
         //補充習題2.輸入一個數，輸出其質因數//while loop
@@ -917,29 +917,32 @@ class Program
 
 
         //輾轉相除法：兩數相除，取餘數重複進行相除，直到餘數為0時，前一個除數即為最大公約數。
-        //Console.WriteLine("請輸入整數x");
-        //int x = Convert.ToInt32(Console.ReadLine());
-        //Console.WriteLine("請輸入整數y");
-        //int y = Convert.ToInt32(Console.ReadLine());
-        //if (x >= y)
-        //{
-        //    while (x % y != 0)
-        //    {
-        //        y = x % y;
-        //        x = y;
-        //    }
-        //    Console.WriteLine($"最大公約數為{Math.Abs(y)}");
-        //}
-        //else
-        //{
-        //    while (y % x != 0)
-        //    {
-        //        x = y % x;
-        //        y = x;
-        //    }
-        //    Console.WriteLine($"最大公約數為{Math.Abs(x)}");
-        //}
-        //Console.ReadKey();
+        Console.WriteLine("請輸入整數x");
+        int x = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("請輸入整數y");
+        int y = Convert.ToInt32(Console.ReadLine());
+        int tem;
+        if (x >= y)
+        {
+            while (x % y != 0)
+            {
+                tem = x % y;
+                x = y;
+                y = tem;
+            }
+            Console.WriteLine($"最大公約數為{Math.Abs(y)}");
+        }
+        else
+        {
+            while (y % x != 0)
+            {
+                tem = y % x;
+                y = x;
+                x = tem;
+            }
+            Console.WriteLine($"最大公約數為{Math.Abs(x)}");
+        }
+        Console.ReadKey();
 
 
         //計算N個數字的和。檢查i有沒有超過N，超過就不做了。
