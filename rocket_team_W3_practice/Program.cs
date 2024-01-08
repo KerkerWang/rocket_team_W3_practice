@@ -297,26 +297,26 @@ class Program
 
 
         //將程式改成如下輸出//for loop
-        Console.WriteLine("開始輸出九九乘法表");
-        for (int i = 1; i <= 9; i += 3)
-        {
-            for (int j = 1; j <= 9; j++)
-            {
-                for (int k = i; k <= i + 2; k++)
-                {
-                    if (k % 3 == 0)
-                    {
-                        Console.Write($"{k} * {j} = {k * j}\n");
-                    }
-                    else
-                    {
-                        Console.Write($"{k} * {j} = {k * j}\t");
-                    }
-                }
-            }
-            Console.WriteLine("");
-        }
-        Console.ReadKey();
+        //Console.WriteLine("開始輸出九九乘法表");
+        //for (int i = 1; i <= 9; i += 3)
+        //{
+        //    for (int j = 1; j <= 9; j++)
+        //    {
+        //        for (int k = i; k <= i + 2; k++)
+        //        {
+        //            if (k % 3 == 0)
+        //            {
+        //                Console.Write($"{k} * {j} = {k * j}\n");
+        //            }
+        //            else
+        //            {
+        //                Console.Write($"{k} * {j} = {k * j}\t");
+        //            }
+        //        }
+        //    }
+        //    Console.WriteLine("");
+        //}
+        //Console.ReadKey();
 
 
         //將程式改成如下輸出//while loop
@@ -752,28 +752,28 @@ class Program
 
 
         //補充習題1.判斷101 - 200之間有多少個質數，並輸出所有質數。//for loop      
-        //string prime = "";
-        //int count = 0;
-        //for (int i = 101; i <= 200; i++)
-        //{
-        //    Boolean isPrime = true;
-        //    for (int j = 2; j <= 100; j++)
-        //    {
-        //        if (i % j == 0)
-        //        {
-        //            isPrime = false;
-        //            break;
-        //        }
-        //    }
-        //    if (isPrime == true)
-        //    {
-        //        prime = prime + i + ",";
-        //        count += 1;
-        //    }
-        //}
-        //Console.WriteLine(prime);
-        //Console.WriteLine($"共有{count}個質數");
-        //Console.ReadKey();
+        string prime = "";
+        int count = 0;
+        for (int i = 101; i <= 200; i++)
+        {
+            Boolean isPrime = true;
+            for (int j = 2; j <= i - 1; j++)
+            {
+                if (i % j == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime == true)
+            {
+                prime = prime + i + ",";
+                count += 1;
+            }
+        }
+        Console.WriteLine(prime);
+        Console.WriteLine($"共有{count}個質數");
+        Console.ReadKey();
 
 
         //補充習題1.判斷101 - 200之間有多少個質數，並輸出所有質數。//while loop      
