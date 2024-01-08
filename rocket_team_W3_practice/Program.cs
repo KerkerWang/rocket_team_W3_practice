@@ -917,35 +917,35 @@ class Program
 
 
         //輾轉相除法：兩數相除，取餘數重複進行相除，直到餘數為0時，前一個除數即為最大公約數。
-        Console.WriteLine("請輸入整數x");
-        int x = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("請輸入整數y");
-        int y = Convert.ToInt32(Console.ReadLine());
-        int tem;
-        if (x >= y)
-        {
-            while (x % y != 0)
-            {
-                tem = x % y;
-                x = y;
-                y = tem;
-            }
-            Console.WriteLine($"最大公約數為{Math.Abs(y)}");
-        }
-        else
-        {
-            while (y % x != 0)
-            {
-                tem = y % x;
-                y = x;
-                x = tem;
-            }
-            Console.WriteLine($"最大公約數為{Math.Abs(x)}");
-        }
-        Console.ReadKey();
+        //Console.WriteLine("請輸入整數x");
+        //int x = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("請輸入整數y");
+        //int y = Convert.ToInt32(Console.ReadLine());
+        //int tem;
+        //if (x >= y)
+        //{
+        //    while (x % y != 0)
+        //    {
+        //        tem = x % y;
+        //        x = y;
+        //        y = tem;
+        //    }
+        //    Console.WriteLine($"最大公約數為{Math.Abs(y)}");
+        //}
+        //else
+        //{
+        //    while (y % x != 0)
+        //    {
+        //        tem = y % x;
+        //        y = x;
+        //        x = tem;
+        //    }
+        //    Console.WriteLine($"最大公約數為{Math.Abs(x)}");
+        //}
+        //Console.ReadKey();
 
 
-        //計算N個數字的和。檢查i有沒有超過N，超過就不做了。
+        ////計算N個數字的和。檢查i有沒有超過N，超過就不做了。
         //Console.WriteLine("請輸入一正整數N");
         //int N = Convert.ToInt32(Console.ReadLine());
         //while (N <= 0)
@@ -1217,7 +1217,7 @@ class Program
         //    N = Convert.ToInt32(Console.ReadLine());
         //}
         //Random myObject = new Random();
-        //int ranNum = myObject.Next(1, 100);
+        //int ranNum = myObject.Next(1, 101);
         //while (N != ranNum)
         //{
         //    if (N > ranNum)
