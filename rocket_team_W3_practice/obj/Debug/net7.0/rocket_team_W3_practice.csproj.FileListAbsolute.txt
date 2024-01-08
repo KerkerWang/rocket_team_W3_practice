@@ -1,0 +1,15 @@
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/bin/Debug/net7.0/rocket_team_W3_practice
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/bin/Debug/net7.0/rocket_team_W3_practice.deps.json
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/bin/Debug/net7.0/rocket_team_W3_practice.runtimeconfig.json
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/bin/Debug/net7.0/rocket_team_W3_practice.dll
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/bin/Debug/net7.0/rocket_team_W3_practice.pdb
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.csproj.AssemblyReference.cache
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.AssemblyInfoInputs.cache
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.AssemblyInfo.cs
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.csproj.CoreCompileInputs.cache
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.dll
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/refint/rocket_team_W3_practice.dll
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.pdb
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/rocket_team_W3_practice.genruntimeconfig.cache
+/Users/wangyahsien/Projects/rocket_team_W3_practice/rocket_team_W3_practice/obj/Debug/net7.0/ref/rocket_team_W3_practice.dll
