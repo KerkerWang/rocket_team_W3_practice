@@ -24,16 +24,16 @@ class Program
 
 
         //讀入五個整數，求這五個整數的和。//for loop
-        //int sum = 0;
-        //int tmp;
-        //for (int i = 1; i <= 5; i++)
-        //{
-        //    Console.WriteLine($"請輸入第{i}個整數");
-        //    tmp = Convert.ToInt32(Console.ReadLine());
-        //    sum = sum + tmp;
-        //    Console.WriteLine($"總和為{sum}");
-        //}
-        //Console.ReadKey();
+        int sum = 0;
+        int tmp;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"請輸入第{i}個整數");
+            tmp = Convert.ToInt32(Console.ReadLine());
+            sum = sum + tmp;
+        }
+        Console.WriteLine($"總和為{sum}");
+        Console.ReadKey();
 
 
         //讀入五個整數，求這五個整數的和。//while loop
