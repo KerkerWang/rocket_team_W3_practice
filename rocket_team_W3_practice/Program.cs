@@ -37,18 +37,18 @@ class Program
 
 
         //讀入五個整數，求這五個整數的和。//while loop
-        int sum = 0;
-        int i = 1;
-        while (i <= 5)
-        {
-            int tmp;
-            Console.WriteLine($"請輸入第{i}個整數");
-            tmp = Convert.ToInt32(Console.ReadLine());
-            sum = sum + tmp;
-            i++;
-        }
-        Console.WriteLine($"總和為{sum}");
-        Console.ReadKey();
+        //int sum = 0;
+        //int i = 1;
+        //while (i <= 5)
+        //{
+        //    int tmp;
+        //    Console.WriteLine($"請輸入第{i}個整數");
+        //    tmp = Convert.ToInt32(Console.ReadLine());
+        //    sum = sum + tmp;
+        //    i++;
+        //}
+        //Console.WriteLine($"總和為{sum}");
+        //Console.ReadKey();
 
 
         //求N個整數的和，N由使用者輸入。//for loop
@@ -297,53 +297,26 @@ class Program
 
 
         //將程式改成如下輸出//for loop
-        //Console.WriteLine("開始輸出九九乘法表");
-        //for (int i = 1; i <= 9; i++)
-        //{
-        //    for (int j = 1; j <= 3; j++)
-        //    {
-        //        if (j % 3 == 0)
-        //        {
-        //            Console.Write($"{j} * {i} = {j * i}\n");
-        //        }
-        //        else
-        //        {
-        //            Console.Write($"{j} * {i} = {j * i}\t");
-        //        }
-        //    }
-        //}
-        //Console.WriteLine("");
-        //for (int k = 1; k <= 9; k++)
-        //{
-        //    for (int j = 4; j <= 6; j++)
-        //    {
-        //        if (j % 3 == 0)
-        //        {
-        //            Console.Write($"{j} * {k} = {j * k}\n");
-        //        }
-        //        else
-        //        {
-        //            Console.Write($"{j} * {k} = {j * k}\t");
-        //        }
-        //    }
-        //}
-        //Console.WriteLine("");
-        //for (int l = 1; l <= 9; l++)
-        //{
-        //    for (int j = 7; j <= 9; j++)
-        //    {
-        //        if (j % 3 == 0)
-        //        {
-        //            Console.Write($"{j} * {l} = {j * l}\n");
-        //        }
-        //        else
-        //        {
-        //            Console.Write($"{j} * {l} = {j * l}\t");
-        //        }
-        //    }
-        //}
-        //Console.WriteLine("");
-        //Console.ReadKey();
+        Console.WriteLine("開始輸出九九乘法表");
+        for (int i = 1; i <= 9; i += 3)
+        {
+            for (int j = 1; j <= 9; j++)
+            {
+                for (int k = i; k <= i + 2; k++)
+                {
+                    if (k % 3 == 0)
+                    {
+                        Console.Write($"{k} * {j} = {k * j}\n");
+                    }
+                    else
+                    {
+                        Console.Write($"{k} * {j} = {k * j}\t");
+                    }
+                }
+            }
+            Console.WriteLine("");
+        }
+        Console.ReadKey();
 
 
         //將程式改成如下輸出//while loop
