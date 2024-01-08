@@ -752,28 +752,28 @@ class Program
 
 
         //補充習題1.判斷101 - 200之間有多少個質數，並輸出所有質數。//for loop      
-        string prime = "";
-        int count = 0;
-        for (int i = 101; i <= 200; i++)
-        {
-            Boolean isPrime = true;
-            for (int j = 2; j <= i - 1; j++)
-            {
-                if (i % j == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime == true)
-            {
-                prime = prime + i + ",";
-                count += 1;
-            }
-        }
-        Console.WriteLine(prime);
-        Console.WriteLine($"共有{count}個質數");
-        Console.ReadKey();
+        //string prime = "";
+        //int count = 0;
+        //for (int i = 101; i <= 200; i++)
+        //{
+        //    Boolean isPrime = true;
+        //    for (int j = 2; j <= i - 1; j++)
+        //    {
+        //        if (i % j == 0)
+        //        {
+        //            isPrime = false;
+        //            break;
+        //        }
+        //    }
+        //    if (isPrime == true)
+        //    {
+        //        prime = prime + i + ",";
+        //        count += 1;
+        //    }
+        //}
+        //Console.WriteLine(prime);
+        //Console.WriteLine($"共有{count}個質數");
+        //Console.ReadKey();
 
 
         //補充習題1.判斷101 - 200之間有多少個質數，並輸出所有質數。//while loop      
@@ -806,33 +806,37 @@ class Program
 
 
         //補充習題2.輸入一個數，輸出其質因數//for loop
-        //Console.WriteLine("請輸入一正整數");
-        //int N = Convert.ToInt32(Console.ReadLine());
-        //while (N < 0)
-        //{
-        //    Console.WriteLine("非正整數，請輸入正整數");
-        //    N = Convert.ToInt32(Console.ReadLine());
-        //}
-        //string output = N + " = ";
-        //for (int i = 2; i <= N; i++)
-        //{
-        //    if (N % i == 0)
-        //    {
-        //        int count = 0;
-        //        for (int j = 0; N % i == 0; j++)
-        //        {
-        //            N = N / i;
-        //            count++;
-        //        }
-        //        output = output + i + " ^ " + count + " * ";
-        //    }
-        //}
-        //if (output.Length > 4)
-        //{
-        //    output = output.Substring(0, output.Length - 3);
-        //}
-        //Console.WriteLine(output);
-        //Console.ReadKey();
+        Console.WriteLine("請輸入一正整數");
+        int N = Convert.ToInt32(Console.ReadLine());
+        while (N < 0)
+        {
+            Console.WriteLine("非正整數，請輸入正整數");
+            N = Convert.ToInt32(Console.ReadLine());
+        }
+        string output = N + " = ";
+        if (N == 1)
+        {
+            Console.WriteLine("1 = 1 * 1");
+        }
+        else
+        {
+            for (int i = 2; i <= N; i++)
+            {
+                if (N % i == 0)
+                {
+                    int count = 0;
+                    for (int j = 0; N % i == 0; j++)
+                    {
+                        N = N / i;
+                        count++;
+                    }
+                    output = output + i + " ^ " + count + " * ";
+                }
+            }
+            output = output.Substring(0, output.Length - 3);
+            Console.WriteLine(output);
+        }
+        Console.ReadKey();
 
 
         //補充習題2.輸入一個數，輸出其質因數//while loop
@@ -844,28 +848,30 @@ class Program
         //    N = Convert.ToInt32(Console.ReadLine());
         //}
         //string output = N + " = ";
-        //int i = 2;
-        //while (i <= N)
+        //if (N == 1)
         //{
-        //    if (N % i == 0)
+        //    Console.WriteLine("1 = 1 * 1");
+        //}
+        //else
+        //{
+        //    int i = 2;
+        //    while (i <= N)
         //    {
-        //        int count = 0;
-        //        int j = 0;
-        //        while (N % i == 0)
+        //        if (N % i == 0)
         //        {
-        //            N = N / i;
-        //            count++;
+        //            int count = 0;
+        //            while (N % i == 0)
+        //            {
+        //                N = N / i;
+        //                count++;
+        //            }
+        //            output = output + i + " ^ " + count + " * ";
         //        }
-        //        output = output + i + " ^ " + count + " * ";
-        //        j++;
+        //        i++;
         //    }
-        //    i++;
-        //}
-        //if (output.Length > 4)
-        //{
         //    output = output.Substring(0, output.Length - 3);
+        //    Console.WriteLine(output);
         //}
-        //Console.WriteLine(output);
         //Console.ReadKey();
 
 
